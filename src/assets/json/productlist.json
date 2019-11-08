@@ -1,0 +1,97 @@
+{
+    "status": 200,
+    "data": {
+        "campaigns": [
+            {
+                "name": "ตะลุย ทะเลญี่ปุ่น",
+                "description": "อิ่มอร่อยกับอาหารทะเลญี่ปุ่น สุดคุ้ม",
+                "cover_image": "https://res.cloudinary.com/hhb4v5ds8/image/upload/v1521009347/rbxc4xbvnewse37duk0g.jpg",
+                "col_size": 6,
+                "direction": "x",
+                "products": [
+                    {
+                        "name": "เค็ก 3 ปอน",
+                        "description": "เค็ก 3 ปอน ลดสุดคุ้ม",
+                        "images": [
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516014161/zebyzoiuvqfgvmbby0ce.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013772/cjkr5amler3ynlpwspo9.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013448/wqh2defbgbenos5jhv3k.jpg"
+                        ],
+                        "discount_percent": 10,
+                        "discount_fix_price": 180,
+                        "shipping_free": true,
+                        "price": 200
+
+                    },
+                    {
+                        "name": "เค็ก 3 ปอน",
+                        "description": "เค็ก 3 ปอน ลดสุดคุ้ม",
+                        "images": [
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516014161/zebyzoiuvqfgvmbby0ce.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013772/cjkr5amler3ynlpwspo9.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013448/wqh2defbgbenos5jhv3k.jpg"
+                        ],
+                        "discount_percent": 10,
+                        "discount_fix_price": 180,
+                        "shipping_free": true,
+                        "price": 200
+                    },
+                    {
+                        "name": "เค็ก 3 ปอน",
+                        "description": "เค็ก 3 ปอน ลดสุดคุ้ม",
+                        "images": [
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516014161/zebyzoiuvqfgvmbby0ce.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013772/cjkr5amler3ynlpwspo9.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013448/wqh2defbgbenos5jhv3k.jpg"
+                        ],
+                        "discount_percent": 10,
+                        "discount_fix_price": 180,
+                        "shipping_free": true,
+                         "price": 200
+                    },
+                    {
+                        "name": "เค็ก 3 ปอน",
+                        "description": "เค็ก 3 ปอน ลดสุดคุ้ม",
+                        "images": [
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516014161/zebyzoiuvqfgvmbby0ce.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013772/cjkr5amler3ynlpwspo9.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013448/wqh2defbgbenos5jhv3k.jpg"
+                        ],
+                        "discount_percent": 10,
+                        "discount_fix_price": 180,
+                        "shipping_free": true,
+                        "price": 200
+                    },
+                    {
+                        "name": "เค็ก 3 ปอน",
+                        "description": "เค็ก 3 ปอน ลดสุดคุ้ม",
+                        "images": [
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516014161/zebyzoiuvqfgvmbby0ce.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013772/cjkr5amler3ynlpwspo9.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013448/wqh2defbgbenos5jhv3k.jpg"
+                        ],
+                        "discount_percent": 10,
+                        "discount_fix_price": 180,
+                        "shipping_free": true,
+                        "price": 200
+                    },
+                    {
+                        "name": "เค็ก 3 ปอน",
+                        "description": "เค็ก 3 ปอน ลดสุดคุ้ม",
+                        "images": [
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516014161/zebyzoiuvqfgvmbby0ce.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013772/cjkr5amler3ynlpwspo9.jpg",
+                            "https://res.cloudinary.com/ha7s6qhcg/image/upload/v1516013448/wqh2defbgbenos5jhv3k.jpg"
+                        ],
+                        "discount_percent": 10,
+                        "discount_fix_price": 180,
+                        "shipping_free": true,
+                        "price": 200
+                    }
+
+
+                ]
+            }
+        ]
+    }
+}

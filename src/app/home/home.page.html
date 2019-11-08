@@ -6,50 +6,53 @@
 
 <ion-content>
 
-    <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide *ngFor="let item of data.campaigns">
-          <img [src]="item.cover_image">
-        </ion-slide>
-      </ion-slides>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let item of data.campaigns">
+      <img [src]="item.cover_image">
+    </ion-slide>
+  </ion-slides>
 
-      <ion-card *ngFor="let shot of data.shortcuts">
-        <ion-grid>
-          <ion-row>
-            <ion-col size="12">
-              <h5>
-                {{shot.name}}
-              </h5>
-            </ion-col>
-          </ion-row>
+  <ion-card *ngFor="let shot of data.shortcuts">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <h5>
+            {{shot.name}}
+          </h5>
+        </ion-col>
+      </ion-row>
 
-          <ion-row>
-            <ion-col *ngFor="let shots of shot.actions">
-              <div>
-                <img [src]="shots.image">
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-card>
+      <ion-row>
+        <ion-col *ngFor="let shots of shot.actions">
+          <div>
+            <img [src]="shots.image">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 
-      <ion-card *ngFor="let cam of data.campaigns">
-          <ion-grid>
-            <ion-row>
-              <ion-col>
-                <h5>
-                  {{cam.name}}
-                </h5>
-              </ion-col>
-            </ion-row>
-  
-            <ion-row>
-              <ion-col [size]="cam.col_size" *ngFor="let cams of cam.products">
-                <div>
-                  <img [src]="cams.images[0]">
-                </div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card>
+  <ion-card *ngFor="let cam of data.campaigns">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <h5>
+            {{cam.name}}
+          </h5>
+        </ion-col >
+        <ion-col size="6">
+          <h4 (click)="onClickSeeAll()" class="seeall">See All >></h4>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col [size]="cam.col_size" *ngFor="let cams of cam.products">
+          <div>
+            <img [src]="cams.images[0]">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 
 </ion-content>

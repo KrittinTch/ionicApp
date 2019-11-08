@@ -3,7 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
 
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule'}
+  { path: '', loadChildren: 'src/app/tabs/tabs.module#TabsPageModule'},  { path: 'productlist', loadChildren: './pages/productlist/productlist.module#ProductlistPageModule' }
+
 
 
 ];

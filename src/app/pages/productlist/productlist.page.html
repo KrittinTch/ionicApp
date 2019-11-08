@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar [class.show-background]="showToolbar">
+    <ion-title>Product List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let item of datas.campaigns">
+      <img [src]="item.cover_image">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card *ngFor="let items of datas.campaigns">
+    <ion-grid>
+      <ion-row >
+        <ion-col>
+          <h5>
+            {{items.description}}
+          </h5>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-card class="cardsmall" *ngFor="let prod of items.products">
+        <ion-col [size]="prod.col_size">
+          <ion-card-header>
+            <h3>{{prod.name}}</h3>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-slides pager="true" [options]="slideOpts">
+              <ion-slide *ngFor="let prods of items.products">
+                <img [src]="prods.images[0]">
+              </ion-slide>
+            </ion-slides>
+            <ion-card-subtitle>{{prod.description}}</ion-card-subtitle>
+           <ion-row>
+            <ion-col size="6">
+            <del>{{prod.price}}฿</del>
+            <h2>
+              {{prod.discount_percent}}% off
+            </h2>
+          </ion-col>
+          <ion-col size="6">
+            <h2>{{prod.discount_fix_price}}฿</h2>
+          </ion-col>
+          </ion-row>
+          </ion-card-content>
+        </ion-col>
+        </ion-card>
+      
+      </ion-row>
+
+
+    </ion-grid>
+  </ion-card>
+
+</ion-content>

@@ -7,11 +7,11 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children: [
-      { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-      { path: 'store', loadChildren: './store/store.module#StorePageModule' },
-      { path: 'reward', loadChildren: './reward/reward.module#RewardPageModule' },
-      { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },
-      { path: 'account', loadChildren: './account/account.module#AccountPageModule' },
+      { path: 'home', loadChildren: 'src/app/home/home.module#HomePageModule' },
+      { path: 'store', loadChildren: 'src/app/store/store.module#StorePageModule' },
+      { path: 'reward', loadChildren: 'src/app/reward/reward.module#RewardPageModule' },
+      { path: 'cart', loadChildren: 'src/app/cart/cart.module#CartPageModule' },
+      { path: 'account', loadChildren: 'src/app/account/account.module#AccountPageModule' },
       {
         path: '',
         redirectTo: '/tabs/home',
