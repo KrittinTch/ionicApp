@@ -1,3 +1,4 @@
+import { AccountService } from './account.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountPage implements OnInit {
 
-  constructor() { }
+  data: any;
+
+  constructor(public accountservice: AccountService) { }
 
   ngOnInit() {
-  }
+    this.accountservice.OnDataChanged.subscribe((res: any) => {
+      this.data = res;
+      console.log(this.data)
+    })
+    }
 
 }

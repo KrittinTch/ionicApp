@@ -1,9 +1,97 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>account</ion-title>
+    <ion-row size="12">
+      <ion-col size="3">
+        <img
+          src="https://4.bp.blogspot.com/-Xajb1lHf6cY/WyeF3Xu76EI/AAAAAAAABpE/edlMkCYXl6k3zzTpHB2n5AinSHzGtZJXwCEwYBhgL/s1600/logo-thisshop.png">
+      </ion-col>
+      <ion-col size="5">
+        <p>
+          Login/Register >
+        </p>
+      </ion-col>
+      <ion-buttons>
+        <ion-col size="2">
+
+          <ion-button>
+            <ion-icon slot="icon-only" src="https://image.flaticon.com/icons/svg/126/126501.svg"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button>
+            <ion-icon slot="icon-only" src="https://image.flaticon.com/icons/svg/126/126472.svg"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-buttons>
+
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-row *ngIf="data && data.account">
+    <ion-col size="4">
+      {{data.account.wishlist}}
+    </ion-col>
+    <ion-col size="4">
+      {{data.account.followedshop}}
+    </ion-col>
+    <ion-col size="4">
+      {{data.account.browsehistory}}
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="data && data.account">
+    <ion-col size="4">
+      <p>Wishlist</p>
+    </ion-col>
+    <ion-col size="4">
+      <p>Followed Shop</p>
+    </ion-col>
+    <ion-col size="4">
+      <p>Browse History</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <h5>
+            My Orders
+          </h5>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3" *ngFor="let item of data.MyOrders">
+          <div>
+            <img [src]="item.image">
+          </div>
+          <div>
+            {{item.name}}
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="12">
+        <h2>
+          Get the highest credit limit
+        </h2>
+      </ion-col>
+      <ion-row>
+        <ion-col *ngIf="data && data.creditads">
+          <img src={{data.creditads.image}}>
+        </ion-col>
+
+      </ion-row>
+    </ion-row>
+  </ion-card>
+
 
 </ion-content>
